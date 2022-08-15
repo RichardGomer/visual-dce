@@ -1,0 +1,4 @@
+node_modules
+output.svg
+.DS_Store
+dist
