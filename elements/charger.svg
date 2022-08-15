@@ -7,5 +7,5 @@
         <text fill="#CA1B1B" xml:space="preserve" style="white-space: pre" font-size="12" font-weight="800" letter-spacing="0em"><tspan x="580.41" y="360.864">NOT TESLA</tspan></text>
         <text fill="black" xml:space="preserve" style="white-space: pre" font-size="12" letter-spacing="0em"><tspan x="601.178" y="565.864">/kwh</tspan></text>
     </g>
-    <text fill="black" xml:space="preserve" style="white-space: pre" font-size="20" font-weight="800" letter-spacing="0em"><tspan x="584.354" y="549.273">{VARIABLE}</tspan></text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-size="20" font-weight="800" letter-spacing="0em"><tspan x="584.354" y="549.273">{{CHARGE_PRICE}}</tspan></text>
 </svg>

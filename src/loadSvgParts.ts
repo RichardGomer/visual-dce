@@ -2,16 +2,16 @@ import fs from 'fs';
 import path from 'path';
 import { JSDOM } from 'jsdom'
 
-async function loadSvgParts(filename: string): Promise<HTMLCollection> {
+async function loadSvgParts(filePath: string): Promise<HTMLCollection> {
 
-    const doc = await JSDOM.fromFile(path.join(__dirname, filename));
-    if (!doc) throw new Error(`Could not load ${filename}`);
+    const doc = await JSDOM.fromFile(filePath);
+    if (!doc) throw new Error(`Could not load ${filePath}`);
 
     const svg = doc.window.document.querySelector("svg")
-    if (!svg) throw new Error(`Could not find svg in ${filename}`);
+    if (!svg) throw new Error(`Could not find svg in ${filePath}`);
 
     const els = svg.children;
-    if (!els) throw new Error(`Could not find any elements in ${filename}`);
+    if (!els) throw new Error(`Could not find any elements in ${filePath}`);
 
     return els;
 

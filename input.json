@@ -1,0 +1,9 @@
+{
+    "elements": [
+        "charger",
+        "sun"
+    ],
+    "variables": {
+        "CHARGE_PRICE": "0.30"
+    } 
+}

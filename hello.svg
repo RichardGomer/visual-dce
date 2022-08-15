@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none"><g>
+        <rect x="544" y="342" width="8" height="258" fill="#939393"></rect>
+        <rect x="677" y="342" width="8" height="258" fill="#939393"></rect>
+        <path d="M586 371.5H644C652.008 371.5 658.5 377.992 658.5 386V476C658.5 500.024 639.024 519.5 615 519.5C590.976 519.5 571.5 500.024 571.5 476V386C571.5 377.992 577.992 371.5 586 371.5Z" stroke="#CA1B1B" stroke-width="3"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M687 342H542V368L552 376V600H677V376L687 368V342ZM586 370C577.163 370 570 377.163 570 386V476C570 500.853 590.147 521 615 521C639.853 521 660 500.853 660 476V386C660 377.163 652.837 370 644 370H586Z" fill="white"></path>
+        <text fill="#CA1B1B" xml:space="preserve" style="white-space: pre" font-size="12" font-weight="800" letter-spacing="0em"><tspan x="580.41" y="360.864">NOT TESLA</tspan></text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-size="12" letter-spacing="0em"><tspan x="601.178" y="565.864">/kwh</tspan></text>
+    </g><text fill="black" xml:space="preserve" style="white-space: pre" font-size="20" font-weight="800" letter-spacing="0em"><tspan x="584.354" y="549.273">0.30</tspan></text></svg>
