@@ -76,6 +76,8 @@ async function run() {
             handler: handleCreate
         })
         .demandCommand(1)
+        .example("$0 create -i input.json -o output.svg", `Create a new SVG file from input ${chalk.yellow("input.json")} and output it to ${chalk.yellow("output.svg")}`)
+        .epilogue(chalk.gray("Produced by the University of Southampton (https://southampton.ac.uk)"))
         .argv
 }
 

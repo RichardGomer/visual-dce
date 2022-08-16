@@ -1,5 +1,5 @@
 {
-  "name": "dces",
+  "name": "visual-dce",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -12,6 +12,7 @@
   "scripts": {
     "start": "ts-node ./src/index.ts --swc",
     "build": "swc src -d dist",
+    "build:watch": "swc src -d dist -w",
     "dev": "nodemon src/index.ts"
   },
   "devDependencies": {
