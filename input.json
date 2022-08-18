@@ -1,15 +1,34 @@
-{
-    "elements": [
-        "BgBlue",
-        "ChargerIonity",
-        "ChargerAvailable",
-        "FacilitiesToilet",
-        "Sun"
-    ],
-    "variables": {
-        "CHARGE_SPEED": "100",
-        "CHARGE_COST": "0.20",
-        "CHARGE_TIME": "20",
-        "CHARGE_WAIT": "11"
-    } 
-}
+[
+    {
+        "elements": [
+            "BgBlue",
+            "ChargerIonity",
+            "ChargerAvailable",
+            "FacilitiesToilet",
+            "Sun"
+        ],
+        "variables": {
+            "CHARGE_SPEED": "100",
+            "CHARGE_COST": "0.20",
+            "CHARGE_TIME": "20",
+            "CHARGE_WAIT": "11"
+        },
+        "name": "Scenario1"
+    },
+    {
+        "elements": [
+            "BgBlue",
+            "ChargerShell",
+            "ChargerAvailable",
+            "FacilitiesFood",
+            "Rain"
+        ],
+        "variables": {
+            "CHARGE_SPEED": "100",
+            "CHARGE_COST": "0.20",
+            "CHARGE_TIME": "20",
+            "CHARGE_WAIT": "11"
+        },
+        "name": "Scenario2"
+    }
+]
