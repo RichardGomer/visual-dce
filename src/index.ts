@@ -47,10 +47,11 @@ async function handleCreate({i,d,p}: yargs.ArgumentsCamelCase) {
             let loadedSvgs = await Promise.all(elements.map(async el => {
                 spinner.update({text: `Building ${name || idx}: loading ${chalk.yellow(el)}`})
                 try {
-                    const svg = await loadSvg(path.join(__dirname, "..", "elements", el + ".svg"))
+                    const svg = await loadSvg(path.join(__dirname, "..", "elements", el + ".svg"), variables)
                     return svg
                 } catch(e) {
                     spinner.error({text: `Could not load ${chalk.redBright(el)}.svg`})
+                    console.log(e)
                     process.exit(1)
                 }
             }))
@@ -63,8 +64,6 @@ async function handleCreate({i,d,p}: yargs.ArgumentsCamelCase) {
         fileSpinner.error({text: `Could not read input file ${chalk.redBright(input)}`})
         process.exit(1)
     }
-
-
 }
 
 async function run() {
