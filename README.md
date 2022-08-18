@@ -35,24 +35,41 @@ Running the `dce` command will display the help menu
 The input file format takes the following structure:
 
 ```json
-{
-    "elements": ["svgName1", "svgName2", "svgName3"],
-    "variables": {
-        "VARIABLE_NAME": "Value"
-    }
-}
+[
+    {
+        "elements": ["svgName1", "svgName2", "svgName3"],
+        "variables": {
+            "VARIABLE_NAME": "Value"
+        }
+    },
+    ...
+]
 ```
+
+For each object in the array, the `elements` property is an array of SVG names. The `variables` property is an object mapping variable names to values.
 
 For each `svgName`, the program expects to find `svgName.svg` in the `elements` directory.
 
 ### Variables
 
-Variables are all global, and are used to replace placeholders within SVG content. For example, if we set `"PRICE": "£10"` we can reference it as `{{PRICE}}` in our SVG file.
+Variables are all global, and are used to replace placeholders within SVG content. For example, if we set `"PRICE": "£10"` we can reference it as `{{PRICE}}` or `{{ PRICE }}` in our SVG file.
 
-### Creating an SVG
+### Creating SVGs
 
-After creating an input file, you can create an SVG by running:
+After creating an input file, you can create SVGs by running:
 
 ```bash
-dce create -i input.json -o output.svg
+dce create -i input.json -d output
 ```
+
+#### -i Input file
+
+The input.json to read from
+
+#### -d Output directory
+
+The directory to output the SVGs to
+
+#### -p Prefix (optional)
+
+An optional prefix for files - example: if you set `-p "batch01"`, the program will output `batch01-1.svg`.

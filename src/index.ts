@@ -81,7 +81,7 @@ async function run() {
                     alias: "d",
                 },
                 "File Prefix": {
-                    describe: "The prefix for each file",
+                    describe: "A prefix  to add to each file",
                     demandOption: false,
                     type: "string",
                     alias: "p"
@@ -96,7 +96,7 @@ async function run() {
             handler: handleCreate
         })
         .demandCommand(1)
-        .example("$0 create -i input.json -o output.svg", `Create a new SVG file from input ${chalk.yellow("input.json")} and output it to ${chalk.yellow("output.svg")}`)
+        .example("$0 create -i input.json -d output.svg", `Create a new set of SVGs file from input ${chalk.yellow("input.json")} and output them to ${chalk.yellow("output/")}`)
         .epilogue(chalk.gray("Produced by the University of Southampton (https://southampton.ac.uk)"))
         .argv
 }
