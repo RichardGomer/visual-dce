@@ -1,9 +1,15 @@
 {
     "elements": [
-        "charger",
-        "sun"
+        "BgBlue",
+        "ChargerIonity",
+        "ChargerAvailable",
+        "FacilitiesToilet",
+        "Sun"
     ],
     "variables": {
-        "CHARGE_PRICE": "0.30"
+        "CHARGE_SPEED": "100",
+        "CHARGE_COST": "0.20",
+        "CHARGE_TIME": "20",
+        "CHARGE_WAIT": "11"
     } 
 }
